@@ -1,4 +1,5 @@
 <?php 
+$_SERVER('REQUEST_METHOD');
 
 abstract class Robo{
     public $nome;
@@ -8,15 +9,15 @@ abstract class Robo{
     private $defesa;
 }
  function __construct(){
-    $this-> $nome;
-    $this-> $modelo;
-    $this-> $energia;
-    $this-> $potencia;
-    $this-> $defesa;
+    $this-> $nome = nome;
+    $this-> $modelo = modelo;
+    $this-> $energia = energia;
+    $this-> $potencia = potencia;
+    $this-> $defesa = defesa;
  }
 
  class Engenheiro {
-    $this->energia  120;
+    $this->energia   120;
     $this->potencia 15;
     $this->defesa 50;
  }
@@ -33,14 +34,18 @@ abstract class Robo{
     $this->defesa 80;
  }
 
-function recarregar(
+function recarregar(){
+    return $modelo && $energia && $potencia
+}
 
+ function exibirStatus(){
+     $this-> $energia +- 10;
+    $this-> $energia max(200);
+ }
 
-)
-
- function exibirStatus(
-
- )
+ function session_start(){
+    $_SESSION 
+ }
  
  
  
@@ -48,7 +53,7 @@ function recarregar(
 ?>
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -56,8 +61,8 @@ function recarregar(
     <title>Robos</title>
 </head>
 <body>
-    <div>
-        <form method="$_POST"></form>
+    <function class="card1"
+         method="$_POST">
         <title>ROBO EXPLORADOR</title>
         <h1>Função: Investigar e explorar planestas e descobrir novas verdades</h1>
 
@@ -69,8 +74,7 @@ function recarregar(
         <form type="text" id="ROBO_EXPLORADOR" name="ROBO_EXPLORADOR" required></form>
         <button>INSPECIONAR</button>
     
-    <div>
-        <form method="$_POST"></form>
+    <function class="card2" method="$_POST">
         <title>ROBO ENGENHEIRO</title>
         <h1>Função: Reparar equipamentos durante a exploração</h1>
 
@@ -81,8 +85,8 @@ function recarregar(
         <label for="ROBO_ENGENHEIRO"></label>
         <form type="text" id="ROBO_ENGENHEIRO" name="ROBO_ENGENHEIRO" required></form>
         <button>INSPECIONAR</button>
-    </div>
-        <form method="$_POST"></form>
+
+    <function class="card3" method="$_POST">
         <title>ROBO DEFENSOR</title>
         <h1>Função: Proteger a estação de inimigos ou entidades desconhecidas</h1>
 
@@ -93,5 +97,13 @@ function recarregar(
         <label for="ROBO_DEFENSOR"></label>
         <form type="text" id="ROBO_DEFENSOR" name="ROBO_DEFENSOR" required></form>
         <button>INSPECIONAR</button>
+    </function>
 </body>
+         <form method="$_GET"></form>
+     <form  id="ROBO_DEFENSOR" name="ROBO_DEFENSOR" required></form>
+      <form id="ROBO_ENGENHEIRO" name="ROBO_ENGENHEIRO" required></form>
+      <form id="ROBO_EXPLORADOR" name="ROBO_EXPLORADOR" required></form>
+    <body>
+       
+    </body>
 </html>

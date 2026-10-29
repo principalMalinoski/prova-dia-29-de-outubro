@@ -1,0 +1,14 @@
+body {
+background-color: aqua;
+border-radius: 2%;
+border: 2%;
+background-position: 0%;
+}
+h1 {
+color: blue;
+}
+ 
+span {
+    color: lightskyblue;
+    border-radius: 2px;
+}
