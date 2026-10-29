@@ -1,5 +1,4 @@
 <?php 
-$_SERVER(['REQUEST_METHOD'] === $_POST);
 
 abstract class Robo{
     public $nome;
@@ -50,7 +49,7 @@ function recarregar(){
    }
  }
  
- json_encode()
+ $_SERVER(['REQUEST_METHOD'] === '$_POST' && isset($_POST['cadastrar']));
 
 ?>
 
