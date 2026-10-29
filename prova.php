@@ -57,11 +57,41 @@ function recarregar(
 </head>
 <body>
     <div>
-        <label for="ROBO EXPLORADOR"></label>
+        <form method="$_POST"></form>
         <title>ROBO EXPLORADOR</title>
-        <h1>Função: Explorar ambientes e descobrir novas verdades</h1>
-        h2
+        <h1>Função: Investigar e explorar planestas e descobrir novas verdades</h1>
 
+        <span>ENERGIA: 100</span>
+        <span>POTÊNCIA: 20</span>
+        <span>DEFESA: 50</span>
+        <span>BOTÕES DE RECARGA</span>
+        <label for="ROBO_EXPLORADOR"></label>
+        <form type="text" id="ROBO_EXPLORADOR" name="ROBO_EXPLORADOR" required></form>
+        <button>INSPECIONAR</button>
+    
+    <div>
+        <form method="$_POST"></form>
+        <title>ROBO ENGENHEIRO</title>
+        <h1>Função: Reparar equipamentos durante a exploração</h1>
+
+        <span>ENERGIA: 120</span>>
+        <span>POTÊNCIA: 15</span>
+        <span>DEFESA: 50</span>
+        <span>BOTÕES DE RECARGA:</span>
+        <label for="ROBO_ENGENHEIRO"></label>
+        <form type="text" id="ROBO_ENGENHEIRO" name="ROBO_ENGENHEIRO" required></form>
+        <button>INSPECIONAR</button>
     </div>
+        <form method="$_POST"></form>
+        <title>ROBO DEFENSOR</title>
+        <h1>Função: Proteger a estação de inimigos ou entidades desconhecidas</h1>
+
+        <span>ENERGIA: 150</span>>
+        <span>POTÊNCIA: 30</span>
+        <span>DEFESA: 80</span>
+        <span>BOTÕES DE RECARGA:</span>
+        <label for="ROBO_DEFENSOR"></label>
+        <form type="text" id="ROBO_DEFENSOR" name="ROBO_DEFENSOR" required></form>
+        <button>INSPECIONAR</button>
 </body>
 </html>
