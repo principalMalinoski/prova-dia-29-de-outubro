@@ -1,5 +1,5 @@
 <?php 
-$_SERVER('REQUEST_METHOD');
+$_SERVER(['REQUEST_METHOD'] === $_POST);
 
 abstract class Robo{
     public $nome;
@@ -8,7 +8,7 @@ abstract class Robo{
     public $potencia;
     private $defesa;
 }
- function __construct(){
+ function __construct( $nome, $mode, $energia, $potencia, $defesa){
     $this-> $nome = nome;
     $this-> $modelo = modelo;
     $this-> $energia = energia;
@@ -35,16 +35,19 @@ abstract class Robo{
  }
 
 function recarregar(){
-    return $modelo && $energia && $potencia
+    return $modelo && $energia && $potencia;
 }
 
  function exibirStatus(){
      $this-> $energia +- 10;
-    $this-> $energia max(200);
+    $this-> $energia (max(200));
+    return $energia;
  }
 
  function session_start(){
-    $_SESSION 
+   if (!isset($_SESSION ['total de recargas'])) {
+    $_SESSION ['total de recargas'] = 0;
+   }
  }
  
  
@@ -58,7 +61,7 @@ function recarregar(){
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="prova.css">
-    <title>Robos</title>
+    <title>Robos da Prova</title>
 </head>
 <body>
     <function class="card1"
