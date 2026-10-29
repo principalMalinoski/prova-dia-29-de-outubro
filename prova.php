@@ -50,8 +50,7 @@ function recarregar(){
    }
  }
  
- 
- 
+ json_encode()
 
 ?>
 
