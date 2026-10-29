@@ -50,7 +50,10 @@ function recarregar(){
  }
  
  $_SERVER(['REQUEST_METHOD'] === '$_POST' && isset($_POST['cadastrar']));
-
+    $nome = trim($_POST['nome'] ?? "");
+     $modelo = trim($_POST['nome'] ?? "");
+      $energia = trim($_POST['energia'] ?? "");
+       $potencia = trim($_POST['potencia'] ?? "");
 ?>
 
 <!DOCTYPE html>
